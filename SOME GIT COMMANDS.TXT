@@ -1,0 +1,152 @@
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~
+$ cd OneDrive
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive
+$ cd Desktop
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop
+$ ls
+ AKSHAY_ANAND_IPL_DB_SQL_PROJECT.docx   desktop.ini
+ Akshay_Anand.pdf                       dj3/
+ Akshay_Photo.jpg                       django_starting.png
+ CCE_SEM_IV.pdf                         linkedin.png
+ GGGGGGGGGGGGG.zip                      mywebsite/
+ Grammarly.lnk*                         password_generator/
+ INTERNSHALA.zip                        personal_portfolio/
+'LNM_Windows_Nov21 (1).seb'             quizapp/
+ SOME_GIT_COMMANDS.txt                 'some img_recog'/
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop
+$ cd mywebsite
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite
+$ git init
+Initialized empty Git repository in C:/Users/aksha/OneDrive/Desktop/mywebsite/.git/
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git config --global user.email akshay2002anand@gmail.com
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git config --global user.name "AkshayAnand2002"
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        base/
+        db.sqlite3
+        manage.py
+        mywebsite/
+        staticfiles/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git add-A
+git: 'add-A' is not a git command. See 'git --help'.
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git add -A
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   base/__init__.py
+        new file:   base/__pycache__/__init__.cpython-39.pyc
+        new file:   base/__pycache__/admin.cpython-39.pyc
+        new file:   base/__pycache__/apps.cpython-39.pyc
+        new file:   base/__pycache__/models.cpython-39.pyc
+        new file:   base/__pycache__/urls.cpython-39.pyc
+        new file:   base/__pycache__/views.cpython-39.pyc
+        new file:   base/admin.py
+        new file:   base/apps.py
+        new file:   base/migrations/__init__.py
+        new file:   base/migrations/__pycache__/__init__.cpython-39.pyc
+        new file:   base/models.py
+        new file:   base/templates/base/home.html
+        new file:   base/tests.py
+        new file:   base/urls.py
+        new file:   base/views.py
+        new file:   db.sqlite3
+        new file:   manage.py
+        new file:   mywebsite/__init__.py
+        new file:   mywebsite/__pycache__/__init__.cpython-39.pyc
+        new file:   mywebsite/__pycache__/settings.cpython-39.pyc
+        new file:   mywebsite/__pycache__/urls.cpython-39.pyc
+        new file:   mywebsite/__pycache__/wsgi.cpython-39.pyc
+        new file:   mywebsite/asgi.py
+        new file:   mywebsite/settings.py
+        new file:   mywebsite/urls.py
+        new file:   mywebsite/wsgi.py
+        new file:   staticfiles/css/main.css
+        new file:   staticfiles/images/Akshay_Photo.jpg
+        new file:   staticfiles/images/linkedin.png
+
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git commit -m "samplewebsite"
+[master (root-commit) e745d3e] samplewebsite
+ 30 files changed, 349 insertions(+)
+ create mode 100644 base/__init__.py
+ create mode 100644 base/__pycache__/__init__.cpython-39.pyc
+ create mode 100644 base/__pycache__/admin.cpython-39.pyc
+ create mode 100644 base/__pycache__/apps.cpython-39.pyc
+ create mode 100644 base/__pycache__/models.cpython-39.pyc
+ create mode 100644 base/__pycache__/urls.cpython-39.pyc
+ create mode 100644 base/__pycache__/views.cpython-39.pyc
+ create mode 100644 base/admin.py
+ create mode 100644 base/apps.py
+ create mode 100644 base/migrations/__init__.py
+ create mode 100644 base/migrations/__pycache__/__init__.cpython-39.pyc
+ create mode 100644 base/models.py
+ create mode 100644 base/templates/base/home.html
+ create mode 100644 base/tests.py
+ create mode 100644 base/urls.py
+ create mode 100644 base/views.py
+ create mode 100644 db.sqlite3
+ create mode 100644 manage.py
+ create mode 100644 mywebsite/__init__.py
+ create mode 100644 mywebsite/__pycache__/__init__.cpython-39.pyc
+ create mode 100644 mywebsite/__pycache__/settings.cpython-39.pyc
+ create mode 100644 mywebsite/__pycache__/urls.cpython-39.pyc
+ create mode 100644 mywebsite/__pycache__/wsgi.cpython-39.pyc
+ create mode 100644 mywebsite/asgi.py
+ create mode 100644 mywebsite/settings.py
+ create mode 100644 mywebsite/urls.py
+ create mode 100644 mywebsite/wsgi.py
+ create mode 100644 staticfiles/css/main.css
+ create mode 100644 staticfiles/images/Akshay_Photo.jpg
+ create mode 100644 staticfiles/images/linkedin.png
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (master)
+$ git remote add origin https://github.com/AkshayAnand2002/DJANGO-SAMPLE-WEBSITE.git
+git branch -M main
+git push -u origin main
+Enumerating objects: 40, done.
+Counting objects: 100% (40/40), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (36/36), done.
+Writing objects: 100% (40/40), 152.45 KiB | 13.86 MiB/s, done.
+Total 40 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/AkshayAnand2002/DJANGO-SAMPLE-WEBSITE.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+aksha@LAPTOP-41D1FR3I MINGW64 ~/OneDrive/Desktop/mywebsite (main)
+$
